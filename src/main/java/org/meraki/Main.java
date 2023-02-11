@@ -26,6 +26,7 @@ public class Main {
         insertShiftArray(new int[]{42, 8, 15, 23, 42}, 16);
         range(5,8);
         range(8, 5);
+        sort(new int []{0, 1, 2, 3, 4, 5, 6});
     }
 
     public static void   nums(){
@@ -184,6 +185,16 @@ public static void range(int num1 , int num2){
     result.add(end);
     System.out.println(result);
 
+}
+
+public static void  sort (int [] arr){
+        int  result =0;
+       for (int i=0 ; i<arr.length;i++){
+           for (int j=0 ; j<arr.length-1 ;j++){
+               if(arr[i]<arr[j]) result=arr[j];
+           }
+           System.out.print(result+" ");
+       }
 }
 
 
